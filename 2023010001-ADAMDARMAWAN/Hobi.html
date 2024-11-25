@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wuthering Waves - Introduction & Tierlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <body class="wuthering-waves"></body>
+    <header>
+        <h1 class="logo">Qwerty.GG</h1>
+        <nav class="menu">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" onclick="toggleDropdown()">Games</a>
+                    <div id="dropdown" class="dropdown-content">
+                        <a href="wutheringwaves.html">Wuthering Waves</a>
+                        <a href="genshinimpact.html">Genshin Impact</a>
+                        <a href="eldenring.html">Elden Ring</a>
+                        <a href="mobilelegends.html">Mobile Legends</a>
+                    </div>
+                </li>
+                <li><a href="Hobi.html">Hobi</a></li>
+                <li><a href="picture.html">Picture</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="#" onclick="showLoginPopup()">Login</a>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <main>
+        <section class="introduction">
+            <h2>HOBI</h2>
+            <p>
+                Hobi saya naik gunung👍 
+            </p>
+        </section>
+
+        <img src="img/muncak.jpg" alt="" width="200px">
+
+    <div id="loginPopup" class="popup">
+        <form class="login-form" onsubmit="handleLogin(); return false;">
+            <h3>Login to Qwerty.GG</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <button type="submit" class="btn">Login</button>
+            <button type="button" class="btn cancel" onclick="hideLoginPopup()">Cancel</button>
+        </form>
+    </div>
+
+    <footer>
+        © 2024 2023010001-AdamDarmawan
+    </footer>
+</body>
+</html>
